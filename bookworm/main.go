@@ -2,17 +2,13 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
-
-func main(){
-	bookworms,err:= loadBooworms("testdata/bookworms.json")
-	if err!=nil{
-		fmt.Fprintf(os.Stderr,"failed to load bookworms:%s\n",err)
-		os.Exit(1)
+func main() {
+	fmt.Println("hello world")
+	bookworms, err := laodBookworms("./testdata/bookworm.json")
+	if err != nil {
+		fmt.Println("an error occured while loading file")
 	}
-
 	fmt.Println(bookworms)
-
 }
