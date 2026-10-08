@@ -16,7 +16,7 @@ type Book struct {
 	Title  string `jsong:"title"`
 }
 
-func laodBookworms(filepath string) ([]Bookworms, error) {
+func loadBookworms(filepath string) ([]Bookworms, error) {
 	file, err := os.Open(filepath)
 	if err != nil {
 		return nil, err
