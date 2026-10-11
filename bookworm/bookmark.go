@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"os"
 )
 
@@ -29,6 +28,5 @@ func loadBookworms(filepath string) ([]Bookworms, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println(bookworms)
 	return bookworms, nil
 }
